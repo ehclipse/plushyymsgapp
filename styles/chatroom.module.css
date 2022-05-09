@@ -1,0 +1,100 @@
+
+
+.scroller::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background: #DBD3C9;
+    border-radius: 30px;
+}
+
+.scroller::-webkit-scrollbar-track {
+    background-color: #546A76;
+}
+
+
+.chatroom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #363636;
+    color: white;
+}
+
+
+.chatroom form input{
+    width: 72.5vw;
+    height: 50px;
+    font-size: 16pt;
+    background-color: #88A0A8;
+    border-width: 0px;
+}
+
+.chatroom form input:focus{
+    outline: none;
+}
+
+.chatroom form button{
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    border-width: 0px;
+}
+
+
+
+.msgsContainer{
+    align-self: center;
+    color: white;
+    height: 75vh;
+    width: 75vw;
+    background-color: #546A76;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+   /* box-shadow: 0px 0px 10px black;*/
+}
+
+.msg{
+    margin : 5px 0px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.send{
+   align-self: flex-end;
+}
+
+.receive {
+    align-self: flex-start;
+}
+
+.send p{
+    background-color: #88A0A8;
+ }
+ 
+ .receive p{
+    background-color: grey;
+ }
+
+.msgText{
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.avatar{
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
